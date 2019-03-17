@@ -1,0 +1,306 @@
+/****************************************************************************************/
+/*************************************  flex布局  ****************************************/
+/****************************************************************************************/
+.flex {
+  /* flex排版 */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex1 {
+  /* 子元素平均分 */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.flex-x {
+  /* 水平排版 */
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.flex-xc {
+  /* 水平剧中 */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.flex-xz {
+  /* 水平剧中 */
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.flex-xr {
+  /* 水平剧中 */
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  -o-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.flex-y {
+  /* 垂直排版 */
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+.flex-yc {
+  /* 垂直剧中 */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+.flex-yb {
+  /* 垂直底部 */
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+.h1 {
+  font-size: 0.35rem;
+}
+.h2 {
+  font-size: 0.3rem;
+}
+.h3 {
+  font-size: 0.28rem;
+}
+.h4 {
+  font-size: 0.236rem;
+}
+.h5 {
+  font-size: 0.26rem;
+}
+.h6 {
+  font-size: 0.218rem;
+}
+.h7 {
+  font-size: 0.25rem;
+}
+.h8 {
+  font-size: 0.2rem;
+}
+.h9 {
+  font-size: 0.15rem;
+}
+.h10 {
+  font-size: 0.134rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #f3f3f3;
+  font-family: PingFangSC-Regular, sans-serif;
+  font-size: 0.28rem;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  background: none;
+}
+body::-webkit-scrollbar-thumb {
+  background: none;
+}
+body::-webkit-scrollbar-track {
+  background: none;
+}
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+ul,
+dl {
+  list-style-type: none;
+}
+input,
+textarea,
+select,
+textarea {
+  font-family: PingFangSC-Regular, sans-serif;
+  background: none;
+  border: none;
+  outline: 0;
+  font-size: 0.236rem;
+  color: #2a2a2a;
+  resize: none;
+  -webkit-appearance: none;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ccc;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+select:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ccc;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #ccc;
+}
+input option,
+textarea option,
+select option,
+textarea option {
+  color: #999;
+}
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 80px;
+  }
+}
+/* 清浮动 */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+@font-face {
+  font-family: 'fdduih5';
+  src: url('./fonts/fdduih5.eot?39h4ic');
+  src: url('./fonts/fdduih5.eot?39h4ic#iefix') format('embedded-opentype'), url('./fonts/fdduih5.ttf?39h4ic') format('truetype'), url('./fonts/fdduih5.woff?39h4ic') format('woff'), url('./fonts/fdduih5.svg?39h4ic#fdduih5') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fdduih5' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-1:before {
+  content: "\e900";
+}
+.icon-2:before {
+  content: "\e901";
+}
+.icon-3:before {
+  content: "\e902";
+}
+.icon-4:before {
+  content: "\e903";
+}
+.icon-5:before {
+  content: "\e904";
+}
+.icon-6:before {
+  content: "\e905";
+}
+.icon-7:before {
+  content: "\e906";
+}
+.icon-8:before {
+  content: "\e907";
+}
+.icon-9:before {
+  content: "\e908";
+}
+.icon-10:before {
+  content: "\e909";
+}
+.icon-11:before {
+  content: "\e90a";
+}
+.icon-12:before {
+  content: "\e90b";
+}
+.icon-13:before {
+  content: "\e90c";
+}
+.icon-14:before {
+  content: "\e90d";
+}
+.icon-15:before {
+  content: "\e90e";
+}
+.icon-16:before {
+  content: "\e90f";
+}
+.icon-17:before {
+  content: "\e910";
+}
